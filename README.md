@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smooth Tab Component (Inverted Border Radius)
 
-## Getting Started
+Ever tried creating those sleek, concave tab corners using the traditional `box-shadow` hack, only to end up with glitchy, pixelated edges? Yeah, me too. 
 
-First, run the development server:
+This repository provides a pixel-perfect, SVG-based solution for inverted border radius components. No CSS hacks, no weird anti-aliasing issues—just pure math (Quadratic Bezier curves) and Tailwind CSS.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Pixel-Perfect:** Uses inline SVG paths instead of CSS pseudo-elements for flawless rendering at any zoom level.
+- **Tailwind Ready:** Styled completely with standard Tailwind CSS utility classes.
+- **Responsive & Clean:** Easy to integrate into any Next.js/React project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📸 Preview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*(Buraya projenin ekran görüntüsünü eklersin: `![Preview](./public/preview.png)`)*
 
-## Learn More
+## 💻 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Inline SVG
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You don't need to install any heavy npm packages. Just grab the code and drop it into your project.
 
-## Deploy on Vercel
+1. Copy the SVG component from `app/page.tsx` (or wherever you placed it).
+2. Adjust the Tailwind colors (`bg-slate-900`, `text-white`, etc.) to match your theme.
+3. If you're modifying the layout size, remember to tweak the SVG `viewBox` and path coordinates accordingly.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧠 Why not CSS Box-Shadow?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The classic `::before` / `::after` with `box-shadow` hack is great for solid colors, but it often struggles with:
+- Sub-pixel rendering (resulting in white/glitchy lines between the shapes).
+- Complex backgrounds (like gradients or images).
+
+Using an SVG `<path>` ensures the cutout is genuinely transparent and the curves are mathematically perfect.
+
+---
+
+### License
+MIT - Do whatever you want with it.
