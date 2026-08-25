@@ -10,10 +10,6 @@ This repository provides a pixel-perfect, SVG-based solution for inverted border
 - **Tailwind Ready:** Styled completely with standard Tailwind CSS utility classes.
 - **Responsive & Clean:** Easy to integrate into any Next.js/React project.
 
-## 📸 Preview
-
-*(Buraya projenin ekran görüntüsünü eklersin: `![Preview](./public/preview.png)`)*
-
 ## 💻 Tech Stack
 
 - Next.js (App Router)
