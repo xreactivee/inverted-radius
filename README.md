@@ -1,39 +1,28 @@
-# Smooth Tab Component (Inverted Border Radius)
+# Inverted Radius
 
-Ever tried creating those sleek, concave tab corners using the traditional `box-shadow` hack, only to end up with glitchy, pixelated edges? Yeah, me too. 
+A modern, responsive tab component with inverted border radius built with TypeScript, Next.js, SVG, and Tailwind CSS.
 
-This repository provides a pixel-perfect, SVG-based solution for inverted border radius components. No CSS hacks, no weird anti-aliasing issues—just pure math (Quadratic Bezier curves) and Tailwind CSS.
+## Features
+- Pixel-perfect rendering using inline SVG paths instead of CSS pseudo-elements for flawless rendering at any zoom level.
+- Tailwind ready and styled completely with standard Tailwind CSS utility classes.
+- Responsive and clean, designed for easy integration into any Next.js or React project.
 
-## 🚀 Features
-
-- **Pixel-Perfect:** Uses inline SVG paths instead of CSS pseudo-elements for flawless rendering at any zoom level.
-- **Tailwind Ready:** Styled completely with standard Tailwind CSS utility classes.
-- **Responsive & Clean:** Easy to integrate into any Next.js/React project.
-
-## 💻 Tech Stack
-
+## Tech Stack
 - Next.js (App Router)
 - React
+- TypeScript
 - Tailwind CSS
 - Inline SVG
 
-## 🛠️ Usage
+## Installation
+```bash
+git clone https://github.com/xreactivee/inverted-radius.git
+cd inverted-radius
+npm install
+```
 
-You don't need to install any heavy npm packages. Just grab the code and drop it into your project.
+## Usage
+Copy the SVG component from the source and drop it into your project. Adjust the Tailwind colors to match your theme, and tweak the SVG viewBox and path coordinates if you modify the layout size.
 
-1. Copy the SVG component from `app/page.tsx` (or wherever you placed it).
-2. Adjust the Tailwind colors (`bg-slate-900`, `text-white`, etc.) to match your theme.
-3. If you're modifying the layout size, remember to tweak the SVG `viewBox` and path coordinates accordingly.
-
-## 🧠 Why not CSS Box-Shadow?
-
-The classic `::before` / `::after` with `box-shadow` hack is great for solid colors, but it often struggles with:
-- Sub-pixel rendering (resulting in white/glitchy lines between the shapes).
-- Complex backgrounds (like gradients or images).
-
-Using an SVG `<path>` ensures the cutout is genuinely transparent and the curves are mathematically perfect.
-
----
-
-### License
-MIT - Do whatever you want with it.
+## License
+MIT
